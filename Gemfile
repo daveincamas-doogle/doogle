@@ -80,6 +80,10 @@ gem 'nokogiri'
 #gem 'rails_12factor', group: :production
 gem 'faraday'
 gem 'nokogiri'
-gem 'factory_girl'
+gem 'factory_girl_rails'
 gem 'webmock'
+gem 'rails_admin'
 #
+
+
+gem "devise"

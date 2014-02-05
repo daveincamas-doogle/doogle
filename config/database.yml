@@ -44,13 +44,15 @@ test:
   encoding: unicode
   database: doogle_test
   pool: 5
-  username: doogle
+  username: crusher
   password:
+  socket: /tmp/mysql.sock
 
 production:
   adapter: postgresql
   encoding: unicode
   database: doogle_production
   pool: 5
-  username: doogle
+  username: crusher
   password:
+  socket: /tmp/mysql.sock
