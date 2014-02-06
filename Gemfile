@@ -83,6 +83,9 @@ gem 'nokogiri'
 gem 'factory_girl_rails'
 gem 'webmock'
 gem 'rails_admin'
+gem 'shoulda-matchers'
+gem 'launchy'
+
 #
 
 

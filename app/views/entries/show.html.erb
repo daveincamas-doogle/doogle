@@ -1,0 +1,13 @@
+<h1>Definitions</h1>
+
+<table>
+  <tr>
+    <th><%= @word %></th>
+  </tr>
+
+  <% @definitions.to_a.each do |definition| %>
+    <tr>
+      <td><%= definition.text %></td>
+    </tr>
+  <% end %>
+</table>

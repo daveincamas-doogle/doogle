@@ -14,11 +14,13 @@ describe "look up a word" do
   end
 
   context "when the word is in our local database" do
-    let(:word) { create(:entry, word: "dog") }
+    let(:entry_in_our_database) { create(:entry, word: "dog") }
+    let(:definition) { create(:definition, entry: entry_in_our_database, text: "man's best friend") }
 
     it "displays a list of definitions" do
-      enter_word word
-
+      enter_word entry_in_our_database.word
+      click_on("Doogle Search")
+      page.should have_content("man's best friend")
     end
   end
 
